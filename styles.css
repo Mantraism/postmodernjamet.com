@@ -1,0 +1,617 @@
+* {cursor: url(https://ani.cursors-4u.net/cursors/cur-13/cur1155.ani), url(https://ani.cursors-4u.net/cursors/cur-13/cur1155.png), auto !important;}
+    @font-face {
+    font-family: kawaii stitch;
+    src: url(Kawaii\ Stitch.ttf);}
+    
+    @font-face {
+    font-family: starborn;
+    src: url(https://dl.dropbox.com/s/l0541on0m5eqvdj/Starborn.ttf);
+    }
+    
+    @font-face {
+    font-family: pixel;
+    src: url(https://dl.dropbox.com/s/kmhe7d3n18vdz5e/w95fa.woff?dl=0);
+    }
+    
+    @font-face {
+    src: url(https://dl.dropbox.com/s/ct0s037q78sao3f/Frighted.ttf);
+    font-family: Frighted;
+    }
+    
+    @font-face {
+    src: url(https://dl.dropbox.com/s/ktlx5w7t8gk42nb/SakeMoru-Regular.ttf);
+    font-family: SakeMoru;
+    }
+    
+    @font-face {
+    font-family:'yipes';
+    src: url(https://dl.dropbox.com/s/qrdm3wived8sm66/Yipes.ttf);
+    }
+    
+    @font-face {
+    font-family:'fenotype';
+    src: url(https://dl.dropbox.com/s/klo6yfrf62916qp/02.10FEN.TTF);
+    }
+
+    body {
+        background-image: url(IMGA0017.JPG);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-size: 100% 100%;
+    }
+
+    ::selection {
+    color: red;
+    background: yellow;
+    }
+
+                        a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    }
+
+    a:visited {
+    color: whitesmoke;
+    background-color: transparent;
+    text-decoration: none;
+    }
+
+    a:hover {
+    color: blue;
+    background-color: transparent;
+    text-decoration: underline;
+    }
+
+    a:active {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+    }
+
+
+    /* TITLE FONT */
+    .jacquard-12-regular {
+        color: white;
+        font-family: "Jacquard 12", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        margin-top: 8px;
+        font-size: 69px;
+    }
+
+
+    .jacquard-12-pus {
+        color: white;
+        font-family: "Jacquard 12", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        margin-top: 8px;
+        font-size: 20px;
+    }
+
+    .jacquard-12-love {
+        color: white;
+        font-family: "Jacquard 12", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        margin-top: 8px;
+        font-size: 69px;
+    }
+
+    /* RUNNING TEXT FONT */
+    .pixelify-sans-regular {
+        font-family: "Pixelify Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 30;
+        color: white;
+    }
+
+
+    .pixelify-sans-bold {
+        font-family: "Pixelify Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: bold;
+        font-style: normal;
+        font-size: 30;
+        color: white;
+    }
+
+
+    .pixelify-sans-lighter {
+        font-family: "Pixelify Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: lighter;
+        font-style: normal;
+        font-size: 30;
+        color: white;
+    }
+
+    .pixelify-sans-small {
+        font-family: "Pixelify Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: lighter;
+        font-style: normal;
+        font-size: 18;
+        color: white;
+    }
+
+
+
+    /* TITLE CONTAINER */
+    .container{
+        /* main container */
+        /* border-width:7px;
+        border-style:solid; */
+        background-color: #295516;
+        /* border-image: url("https://foollovers.com/mat/menu05/51a-none.gif") 9 fill round; */
+        position:relative;
+        height: auto;
+        /* height: 85px; */
+        margin-top: 37px;
+        margin-left: 66px;
+        margin-right: 66px;
+    }
+
+    .container-one {
+        /* // first container  */
+        border-width: 1px;
+        border-style: solid;
+        border-color: white;
+        /* background-color: #295516; */
+        background-image: url('https://dl.glitter-graphics.com/pub/3418/3418767a68xp6yq1b.gif -- go to www.glitter-graphics.com');
+        background-repeat: repeat;
+        width: 880px;
+        position: relative;
+        left: 1px;
+        height: 170px;
+        box-shadow: 0 0 8px 8px white inset;
+        z-index: 5;
+    }
+
+    /* RUNNING TEXT */
+    .wrapper {
+        margin-top: -30px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 50%;
+        overflow: hidden;
+        padding: 0;
+    }
+
+    .marquee {
+        margin: 0;
+        padding: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        display: inline-block;
+        animation: marquee 9s linear infinite;
+    }
+
+    .marquee p {
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+    }
+
+    @keyframes marquee {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(-50%, 0, 0);
+    }
+    }
+
+    .back {
+        position: fixed;
+        margin-left: 66px;
+        padding: 0px;
+        font-family: "Pixelify Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 30;
+        color: white;
+        height: fit-content; /* set height to "height:fit-content;" to expand with text size */
+        line-height: 22px;
+    }
+    
+    /* INTRODUCTION SECTION */
+    .outer {
+        /* outer image (u may change the border image - link in description of video for more codes) */
+        border-width:4px;
+        border-style:solid;
+        width: 258px;
+        height: 610px;
+        margin-top: 25px;
+        margin-left: 66px;
+        position: relative;
+        border-color: white;
+        padding: 0;
+    }
+
+    .inner{
+        /* // inner image */
+        width: 100%;
+        height: 100%;
+        background-image: image("IMGA0016_edited");
+        background-size: cover;
+    }
+
+    .intro-box{
+        box-sizing: border-box;
+        /* border-color: white;
+        background-color: white; */
+        position: relative;
+        margin-left: 12px;
+        margin-right: 12px;
+        margin-bottom: 12px;
+        padding: 0px;
+        margin-top: -10pX;
+        line-height: 19px;
+    }
+    
+    .contact-box{
+        box-sizing: border-box;
+        font-family: "Pixelify Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 20;
+        color: white;
+        line-height: 1px;
+    }
+
+    /* NAVIGATION */
+    .bg, .in { 
+        box-sizing: border-box;
+    }
+
+    .bg {
+    position: relative;
+    padding: 0px;
+    width:50%;
+    /* border:1px solid rgb(255, 255, 255); */
+    }
+
+    .in {
+    padding: 0px;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 30;
+    color: white;
+    height: fit-content; /* set height to "height:fit-content;" to expand with text size */
+    line-height: 22px;
+    }
+
+    /* PUS SECTION */
+    .outer-pus {
+        /* outer image (u may change the border image - link in description of video for more codes) */
+        border-width:4px;
+        border-style:hidden;    
+        width: 258px;
+        height: 300px;
+        margin-top: 25px;
+        margin-right: 66px;
+        position: relative;
+        border-color: white;
+        padding: 0;
+    }
+
+    .inner-pus{
+        /* // inner image */
+        width: 100%;
+        height: 100%;
+        background-image: image("IMGA0016_edited");
+        background-size: cover;
+    }
+
+
+    /* MAIN CONTENT (INTRO, MAIN CONTENT, PUS) */
+    /* Container for flexboxes */
+    .row {
+    display: -webkit-flex;
+    display: flex;
+    }
+
+    /* Create three unequal columns that sits next to each other */
+    .column {
+    /* Should be removed. Only for demonstration */
+    }
+
+    /* Left and right column */
+    .column.side {
+    flex-basis: 19%;
+    /* -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1; */
+    }
+
+    /* Middle column */
+    .column.middle {
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    }
+
+    /* FOOTER */
+    .footer {
+    position: fixed;
+    left: 0;
+    bottom: 5px;
+    width: 100%;
+    /* background-color: red; */
+    color: white;
+    text-align:center;
+    padding-left: 60px;
+    display: flex;
+    }
+
+    /* GIF/ILUSTRATION */
+    .gif-center{
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    bottom: 150px;
+    right: 100px;
+    border: 0;
+    float: right;  
+    }
+
+    .img-center{
+    width: 500px;
+    height: 500px;
+    position: fixed;
+    bottom: 0px;
+    right: 50px;
+    border: 0;
+    float: right;  
+    }
+
+    .update-box{
+        box-sizing: border-box;
+        /* border-color: white;
+        background-color: white; */
+        position: relative;
+        margin-top: -50px;
+        padding: 0px;
+        width: 200%;
+        overflow: hidden;
+        height: 500px;
+    }
+
+    .archive-box{
+        box-sizing: border-box;
+        /* /* border-color: white; */
+        /* background-color: white; */ */
+        position: relative;
+        padding: 0px;
+        overflow: scroll;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* DISCLAIMER HUMAN MADE THIS BOX*/
+    .disclaimer-box{
+        box-sizing: border-box;
+        align-self: flex-end;
+        position: relative;
+        margin-left: 18px;
+        margin-bottom: 37px;
+        width: 150px;
+        height: 70px;
+        color: white;
+        font-family: "Jacquard 12", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    /* MUSIC PLAYER */
+    
+    .button, .disclaimer-box{
+        box-sizing: border-box;
+    }
+
+    .button {
+        position: relative;
+        background-image: url('https://dl.glitter-graphics.com/pub/3418/3418767a68xp6yq1b.gif') ;
+        background-color: #4B520F;
+        border: white;
+        border-style: solid;
+        align-self:start;
+        display: inline-block;
+        height: 90px;
+        padding-left: 90px;
+    }
+
+    .button:active {
+        position: relative;
+        background-image: url('https://dl.glitter-graphics.com/pub/66/66280r4qw1njrxh.gif');
+        background-color: #4B520F;
+        border: white;
+        border-style: solid;
+        align-self:start;
+        display: inline-block;
+        height: 90px;
+        padding-left: 90px;
+    }
+
+        .button-active {
+        position: relative;
+        background-image: url('https://dl.glitter-graphics.com/pub/66/66280r4qw1njrxh.gif');
+        background-color: #4B520F;
+        border: white;
+        border-style: solid;
+        align-self:start;
+        display: inline-block;
+        height: 90px;
+        padding-left: 90px;
+    }
+
+    .button-pause {
+        position: relative;
+        background-image: url('https://dl.glitter-graphics.com/pub/3418/3418767a68xp6yq1b.gif') ;
+        background-color: #4B520F;
+        border: white;
+        border-style: solid;
+        align-self:start;
+        display: inline-block;
+        height: 90px;
+        padding-left: 90px;
+    }
+
+
+    .button:focus {
+        position: relative;
+        background-image: url('https://dl.glitter-graphics.com/pub/66/66280r4qw1njrxh.gif');
+        background-color: #4B520F;
+        border: white;
+        border-style: solid;
+        align-self:start;
+        display: inline-block;
+        height: 90px;
+        padding-left: 90px;
+    }
+
+
+
+
+    .triangle-right {
+        width: 0;
+        height: 0;
+        border-top: 20px solid transparent;
+        border-left: 45px solid white;
+        border-bottom: 20px solid transparent;
+        margin-left: -60px;
+    }
+
+    .square {
+    height: 35px;
+    width: 35px;
+    background-color: whitesmoke;
+    margin-left: -60px
+    }
+
+    .audio-player {
+        width: 300px;
+        margin: 20px;
+        -webkit-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+        -moz-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+        box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+        -webkit-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+        transform: scale(1.05);
+
+    }
+
+
+
+
+    /*
+        Source - https://stackoverflow.com/a
+        Posted by Michael Gaskill, modified by community. See post 'Timeline' for change history
+        Retrieved 2025-12-11, License - CC BY-SA 4.0
+        */
+
+        #audio-player {
+            height: 50px;
+            width: 500px;
+            overflow: hidden;
+            background-color: #2B2B2B;
+            color: white;
+            -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+            -moz-user-select: none;    /* mozilla browsers */
+            -khtml-user-select: none;  /* webkit (konqueror) browsers */
+            -ms-user-select: none;     /* IE10+ */
+        }
+
+        #controls {
+            height: 50px;
+            background-color: #808080;
+            width: 350px;
+        }
+
+        .time {
+            font-size: 10px;
+            color: white;
+            position: relative;
+            top: 14px;
+            margin: 5px;
+        }
+
+        .ui-progressbar {
+            background: #2B2B2B;
+        }
+
+        .ui-progressbar-value {
+            background: white;
+        }
+
+        #progressbar, #volume {
+            height: 10px;
+            display: inline-block;
+            border-radius: 0px;
+            border: none;
+            position: relative;
+            top: 16px;
+        }
+
+        #progressbar {
+            width: 150px;
+        }
+
+        #play, #mute {
+            font-size: 16px;
+            width: 20px;
+            position: relative;
+            top: 17px;
+        }
+
+        #play {
+            margin-left: 15px;
+        }
+
+        #volume {
+            width: 50px;
+        }
+
+        #more-info-box {
+            display: inline-block;
+            width: 150px;
+            height: 50px;
+            position: relative;
+            left: 350px;
+            top: -50px;
+            padding-top: 18px;
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 12px;
+            color: white;
+        }
+
+        #more-info-box, #more-info-box > span {
+            cursor: context-menu;
+        }
+
+        #info-tray {
+            display: inline-block;
+            color: white;
+            position: relative;
+            width: 100%;
+            top: -65px;
+            height: 50px;
+            padding: 5px;
+        }
+
+        
