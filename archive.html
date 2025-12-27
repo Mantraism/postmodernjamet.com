@@ -25,7 +25,7 @@
                 background-attachment: fixed;
                 background-size: cover;
                 background-size: 100% 100%;
-                overflow: hidden;
+                /* overflow: hidden; */
             }
         </style>
 
@@ -56,36 +56,40 @@
         
 
         <div class="row">
-        </div>
-
-        <div class="column side">
-            <div class="back">
-                <p><u><a href="index.html"><- BACK</a></u></p>
+            <div class="column side">
+                <div class="outer-back">
+                    <div class="back">
+                        <p><u><a href="index.html"><- Back</a></u></p>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <div class="column middle">
-            <div class="archive-box">
-                 <!-- feed="at://did:plc:jcoy7v3a2t4rcfdh6i4kza25/app.bsky.feed.generator/astro" -->
-            <!-- custom-styles=".border-slate-300 { border-color: red; }" -->
-            <!-- username="vincentwill.com" -->
-            <bsky-embed
-                username="postmodernjamet.bsky.social"
-                mode=""
-                limit="10"
-                link-image="true"
-                link-target="_blank"
-                load-more="true"
-                date-format='{"type":"absolute","locale":"de-DE","options":{"weekday":"long","year":"numeric","month":"long","day":"numeric"}}'
-            ></bsky-embed>
-            </div>
-           
+            <div class="column middle">
 
-            <script src="./dist/bsky-embed.es.js"></script>
-        </div>
+                <div class="archive-box">
+                    <!-- feed="at://did:plc:jcoy7v3a2t4rcfdh6i4kza25/app.bsky.feed.generator/astro" -->
+                <!-- custom-styles=".border-slate-300 { border-color: red; }" -->
+                <!-- username="vincentwill.com" -->
+                <bsky-embed
+                    username="postmodernjamet.bsky.social"
+                    mode=""
+                    limit="10"
+                    link-image="true"
+                    link-target="_blank"
+                    load-more="true"
+                    date-format='{"type":"absolute","locale":"de-DE","options":{"weekday":"long","year":"numeric","month":"long","day":"numeric"}}'
+                ></bsky-embed>
+                </div>
             
-        <div class="column side">
+
+                <script src="./dist/bsky-embed.es.js"></script>
+            </div>
+                
+            <div class="column side">
+            </div>
         </div>
+
+       
 
         <div class="gif-center">
                 <img src="http://dl6.glitter-graphics.net/pub/445/445196bh6p2lmqbw.gif" height="500" width="500"><br>
