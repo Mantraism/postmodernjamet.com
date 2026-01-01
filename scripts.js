@@ -124,3 +124,10 @@ more_info.click(function() {
     }, 1000);
 });
 
+// insert style to soundcloud player
+preview.onload = function() {
+    var style = document.createElement('style');
+        style.id = 'styles';
+        style.type ='text/css';
+        mypreview.head.appendChild(style);
+}
