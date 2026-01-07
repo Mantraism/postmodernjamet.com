@@ -1,0 +1,8 @@
+// Source - https://stackoverflow.com/a
+// Posted by Arshid KV
+// Retrieved 2026-01-07, License - CC BY-SA 3.0
+
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
