@@ -400,6 +400,16 @@
     float: right;  
     }
 
+    .gif-center2{
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    bottom: 50px;
+    left: 0;
+    border: 0;
+    float: left;  
+    }
+
     .img-center{
     width: 500px;
     height: 500px;
