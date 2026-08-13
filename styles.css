@@ -34,12 +34,23 @@
     }
 
     body {
-        background-image: url(IMGA0017.JPG);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        background-size: 100% 100%;
+        background: url(images/IMGA0017.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover; /* For WebKit*/
+        -moz-background-size: cover;    /* Mozilla*/
+        -o-background-size: cover;      /* Opera*/
+        background-size: cover;         /* Generic*/
+        background-color: #4B520F;
     }
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    .sticky + .content {
+        padding-top: 102px;
+    }   
 
     ::selection {
     color: red;
@@ -140,7 +151,7 @@
         font-optical-sizing: auto;
         font-weight: bold;
         font-style: normal;
-        font-size: 30;
+        font-size: 30px;
         color: white;
     }
 
@@ -173,7 +184,7 @@
         background-color: #295516;
         /* border-image: url("https://foollovers.com/mat/menu05/51a-none.gif") 9 fill round; */
         position:relative;
-        height: auto;
+        height: fit-content;
         /* height: 85px; */
         margin-top: 37px;
         margin-left: 66px;
@@ -237,7 +248,7 @@
         font-optical-sizing: auto;
         font-weight: normal;
         font-style: normal;
-        font-size: 30;
+        font-size: 30px;
         color: white;
         height: fit-content; /* set height to "height:fit-content;" to expand with text size */
         line-height: 22px;
@@ -248,11 +259,11 @@
         /* outer image (u may change the border image - link in description of video for more codes) */
         border-width:4px;
         border-style:solid;
-        width: 258px;
-        height: 610px;
-        margin-top: 25px;
+        width: 100%;
+        height: auto;
+        /* margin-top: 25px;
         margin-left: 66px;
-        position: relative;
+        position: relative; */
         border-color: white;
         padding: 0;
     }
@@ -261,11 +272,11 @@
         /* outer image (u may change the border image - link in description of video for more codes) */
         border-width:4px;
         border-style:hidden;
-        width: 258px;
-        height: 610px;
-        margin-top: 25px;
-        margin-left: 66px;
-        position: relative;
+        width: 100%;
+        height: auto;
+        /* margin-top: 25px;
+        margin-left: 66px; */
+        /* position: relative; */
         padding: 0;
     }
 
@@ -282,12 +293,12 @@
         box-sizing: border-box;
         /* border-color: white;
         background-color: white; */
-        position: relative;
-        margin-left: 12px;
+        /* position: relative; */
+        /* margin-left: 12px;
         margin-right: 12px;
-        margin-bottom: 12px;
+        margin-bottom: 12px; */
         padding: 0px;
-        margin-top: -10pX;
+        /* margin-top: -10pX; */
         line-height: 19px;
     }
     
@@ -299,7 +310,7 @@
         font-style: normal;
         font-size: 20;
         color: white;
-        line-height: 1px;
+        line-height: 3.5px;
     }
 
     /* NAVIGATION */
@@ -308,22 +319,19 @@
     }
 
     .bg {
-    position: relative;
-    padding: 0px;
-    width:50%;
+    /* position: relative; */
     /* border:1px solid rgb(255, 255, 255); */
     }
 
     .in {
-    padding: 0px;
     font-family: "Pixelify Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
-    font-size: 30;
+    font-size: 30px;
     color: white;
     height: fit-content; /* set height to "height:fit-content;" to expand with text size */
-    line-height: 22px;
+    /* line-height: 22px; */
     }
 
     /* PUS SECTION */
@@ -331,11 +339,11 @@
         /* outer image (u may change the border image - link in description of video for more codes) */
         border-width:4px;
         border-style:hidden;    
-        width: 258px;
-        height: 300px;
-        margin-top: 25px;
-        margin-right: 66px;
-        position: relative;
+        width: 100%;
+        height: auto;
+        /* margin-top: 25px;
+        margin-right: 66px; */
+        /* position: relative; */
         border-color: white;
         padding: 0;
     }
@@ -344,12 +352,45 @@
         /* // inner image */
         width: 100%;
         height: 100%;
-        background-image: image("IMGA0016_edited");
         background-size: cover;
     }
 
 
     /* MAIN CONTENT (INTRO, MAIN CONTENT, PUS) */
+     /* GRID LAYOUT WEBSITE BODY */
+    div.flex-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    div.flex-container > div {
+        margin: 10px;
+    }
+
+    /* Use media query and show the flex items vertically if screen width is less than 600px */
+    @media screen and (max-width:600px) {
+        div.flex-container {
+            flex-direction: column;
+        }
+    }
+
+    .content {
+        padding: 16px;
+        margin-top: 69px;
+        opacity: 1;
+    }
+
+        /* SIDE CONTENT */
+        .side-content{
+            width: 25%;
+        }
+
+        /* MAIN CONTENT */
+        .main-content{
+            width: 50%;
+        }
+
+
     /* Container for flexboxes */
     .row {
     display: -webkit-flex;
@@ -363,14 +404,20 @@
 
     /* Left and right column */
     .column.side {
-    flex-basis: 19%;
-    /* -webkit-flex: 1;
+    /* flex-basis: 19%; */
+    width: 25%;
+    -webkit-flex: 1;
     -ms-flex: 1;
-    flex: 1; */
+    flex: 1;
+    margin-left: auto;
+    margin-right: auto;
     }
 
     /* Middle column */
     .column.middle {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
     -webkit-flex: 2;
     -ms-flex: 2;
     flex: 2;
@@ -438,10 +485,6 @@
         box-sizing: border-box;
         /* /* border-color: white; */
         /* background-color: white;  */
-        position: relative;
-        padding: 0px;
-        margin-top: 25px;
-        margin-left: 0px;
         overflow: scroll;
         width: 100%;
         height: 100%; /* kklo pengen digantiu kayak update box, dibikin kurang dari 100% (75%) terus di halaman archive.html bodynya diganti scrollable */
@@ -449,39 +492,37 @@
         scrollbar-width: none;  /* Firefox, Safari 18.2+, Chromium 121+ */
     }
 
-        .eastuber-box{
+    bsky-embed,
+    bsky-embed * {
+    pointer-events: none;
+    }
+
+    .eastuber-box{
         box-sizing: border-box;
         /* /* border-color: white; */
         /* background-color: white;  */
-        position: relative;
-        padding: 0px;
         text-align: center;
-        margin-top: 25px;
-        margin-left: 0px;
-        overflow: scroll;
+        /* overflow: scroll; */
         width: 100%;
         height: 100%; /* kklo pengen digantiu kayak update box, dibikin kurang dari 100% (75%) terus di halaman archive.html bodynya diganti scrollable */
         -ms-overflow-style: none;  /* Internet Explorer 10+ */
         scrollbar-width: none;  /* Firefox, Safari 18.2+, Chromium 121+ */
+        font-size: 30px;
     }
 
     .writings-box{
         box-sizing: border-box;
         /* /* border-color: white; */
         /* background-color: white;  */
-        position: relative;
-        padding: 0px;
-        margin-top: 25px;
-        margin-left: 0px;
         overflow: scroll;
-        width: 75%;
+        width: 100%;
         height: 100%;
         text-align: center;
         font-family: "Pixelify Sans", sans-serif;
         font-optical-sizing: auto;
         font-weight: lighter;
         font-style: normal;
-        font-size: 18;
+        font-size: 20px;
         color: white;
         -ms-overflow-style: none;  /* Internet Explorer 10+ */  
         scrollbar-width: none;  /* Firefox, Safari 18.2+, Chromium 121+ */
@@ -491,11 +532,8 @@
         box-sizing: border-box;
         /* /* border-color: white; */
         /* background-color: white;  */
-        position: relative;
         padding: 0px;
         text-align: center;
-        margin-top: 25px;
-        margin-left: 0px;
         overflow: scroll;
         width: 100%;
         height: 100%;
@@ -507,13 +545,9 @@
         box-sizing: border-box;
         /* /* border-color: white; */
         /* background-color: white;  */
-        position: relative;
-        padding: 0px;
-        margin-top: 50px;
-        margin-left: 0px;
         overflow: scroll;
         width: 100%;
-        height: 100%;
+        height: 600px;
         -ms-overflow-style: none;  /* Internet Explorer 10+ */
         scrollbar-width: none;  /* Firefox, Safari 18.2+, Chromium 121+ */
     }
