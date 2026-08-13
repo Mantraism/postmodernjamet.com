@@ -81,6 +81,19 @@
     text-decoration: underline;
     }
 
+    /* Make the Bluesky embed mostly static, but keep the video controls clickable */
+    bsky-embed a,
+    bsky-embed button {
+        pointer-events: none;
+        cursor: default;
+    }
+
+    bsky-embed video,
+    bsky-embed video * {
+        pointer-events: auto;
+        cursor: pointer;
+    }
+
     .tumblr_controls, .tmblr-iframe{display:none!important;}
     .tmblr-iframe-compact .tmblr-iframe--unified-controls {display: none!important;}
 
@@ -492,10 +505,6 @@
         scrollbar-width: none;  /* Firefox, Safari 18.2+, Chromium 121+ */
     }
 
-    bsky-embed,
-    bsky-embed * {
-    pointer-events: none;
-    }
 
     .eastuber-box{
         box-sizing: border-box;
